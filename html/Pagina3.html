@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  
+  <title>PANOPTICAL</title>
+  <link rel="stylesheet" type="text/css" href="C:\Users\Usuario\Desktop\Proyecto Pagina Web\css\estilos2.css" />    
+
+  </head>
+  <body>
+  <div class="form-group">
+  <input type= "text" class = "form-control pull-right" style="width:20%" id="search" placeholder = "Type to search table. . .">
+  
+  <table class="table-bordered table pull-right" id="mytable" cellspacing="0" style="width: 100%;">
+  <thread>
+  <tr role="row">
+  <th>Apellido Paterno</th>
+  <th>Apellido Materno</th>
+  <th>Nombre(s)</th>
+  <th>Alias</th>
+  <th>Colonia</th>
+  <th>Calle</th>
+  <th>#</th>
+  <th>CP</th>
+  <th>Curp</th>
+  <th>Descripcion</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>Lopez</td>
+  <td>Cruz</td>
+  <td>Javier</td>
+  <td>Barbie</td>
+  <td>Del Valle</td>
+  <td>Valentín Gama</td>
+  <td>1238</td>
+  <td>78200</td>
+  <td>aaaaaaaaaaaaaaaaaa</td>
+  <td>aaaaaaaaaaaaaaaaaa</td>
+  </tr>
+    <tr>
+  <td>Patiño</td> 
+  <td>Villagomez</td>
+  <td>Jose Gilberto</td>
+  <td>El chairo</td>
+  <td>Polanco</td>
+  <td>San Luis Potosí</td>
+  <td>1228</td>
+  <td>78100</td>
+  <td>aaaaaaaaaaaaaaaaaa</td>
+  <td>aaaaaaaaaaaaaaaaaa</td>
+  </tr>
+    <tr>
+  <td>Alvarez</td> 
+  <td>Alvarado</td>
+  <td>Alvaro</td>
+  <td>Triple A</td>
+  <td>Del Valle</td>
+  <td>Valentín Gama</td>
+  <td>1231</td>
+  <td>78500</td>
+  <td>aaaaaaaaaaaaaaaaaa</td>
+  <td>aaaaaaaaaaaaaaaaaa</td>
+  </tr>
+  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  $("#search").keyup(function(){
+  _this=this;
+  $.each($("#mytable tbody tr"), function() {
+  if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+  $(this).hide();
+  else
+  $(this).show();
+  });
+  });
+  });
+ </script>
+ 
+ <script src="js/jspdf.js"></script>
+    <script src="js/jspdf.plugin.from_html.js"></script>
+    <script src="js/jspdf.plugin.addhtml.js"></script>
+    <script src="//mrrio.github.io/jsPDF/dist/jspdf.debug.js"></script>
+    <script src="http://html2canvas.hertzen.com/build/html2canvas.js"></script>
+    <script type="text/javascript" src="./libs/FileSaver.js/FileSaver.js"></script>
+    <script type="text/javascript" src="./libs/Blob.js/Blob.js"></script>
+    <script type="text/javascript" src="./libs/deflate.js"></script>
+    <script type="text/javascript" src="./libs/adler32cs.js/adler32cs.js"></script>
+
+    <script type="text/javascript" src="js/jspdf.plugin.addimage.js"></script>
+    <script type="text/javascript" src="js/jspdf.plugin.sillysvgrenderer.js"></script>
+    <script type="text/javascript" src="js/jspdf.plugin.split_text_to_size.js"></script>
+    <script type="text/javascript" src="js/jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script>
+	$(document).ready(function() {
+
+    $("#pdfDiv").click(function() {
+
+    var pdf = new jsPDF('p','pt','letter');
+    var specialElementHandlers = {
+    '#rentalListCan': function (element, renderer) {
+        return true;
+        }
+    };
+
+    pdf.addHTML($('#rentalListCan').first(), function() {
+        pdf.save("caravan.pdf");
+    });
+    });
+});
+</script>
+  
+
+  </body>
+</html>

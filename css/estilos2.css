@@ -1,0 +1,74 @@
+ body 
+ {
+ background-color: #fbfbfb;
+ }
+ .encabezado
+ {
+   background-color:#d1adf5;
+  position: fixed;
+  height: 41px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  text-align:center; 
+ }
+  .logo
+ {
+   position:absolute;
+   border:dashed blue;
+   width:150px;
+   height:150px;
+   display:inline;
+   margin-left:600px;
+   margin-top:40px;
+ }
+ .centro
+ {
+   position:absolute;
+   
+   width:60%;
+   height:250px;
+   display:inline;
+   margin-left:20%;
+   margin-top:200px;
+ }
+ .titulo
+ {
+   float:left;
+ 
+   width:97%;
+    overflow:hidden;
+    clear:both;
+   height:50%;
+  font-family:Bahnschrift,Source Sans Pro Black;
+  color:#d1adf5;
+  font-size:80px;
+  padding:10px;
+  text-align:center;
+  
+ }
+ 
+  .buscador
+ {
+  float:left;
+  overflow:hidden;
+  
+   width:99.25%;
+   height:35%;
+   clear:both;
+  
+  
+ }
+   .agregar
+ {
+   position:absolute;
+   width:60%;
+   height:50px;
+   display:inline;
+   margin-left:20%;
+   margin-top:450px;
+  
+ }
+ 
+   

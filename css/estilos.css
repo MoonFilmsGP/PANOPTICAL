@@ -1,0 +1,123 @@
+ body 
+ {
+ background-color: #fbfbfb;
+ }
+       
+ .encabezado
+ {
+  background-color:#d1adf5;
+  position: fixed;
+  height: 141px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  text-align:center; 
+  
+ }
+ 
+ .titulo{
+    float:right;    
+	height: 135px;
+	width: 86%;
+	z-index: 1;
+    display: flex;
+   	
+   	align-items: center;
+    justify-content:left;
+   	font-family:Bahnschrift,Source Sans Pro Black;
+   	font-size:80px;
+    color:white;
+    
+   	 
+	}    
+.logo{
+	position:fixed;
+	height: 135px;
+	width: 13.5%;
+	z-index: 1;
+   	justify-content:center;
+
+	}
+ 
+ .informacion
+ {
+ position:absolute;
+ background-color:#fbfbfb;
+ height:510px;
+ width:98%;
+ margin-top:150px;
+ left:0 px;
+ top: 0 px;
+ z-index:1;
+ text-align:justify;
+ 
+ }
+ 
+ .fotografia
+ {
+ float:left;
+ background-color:#ffffff;
+ height:490px;
+ width:37%;
+ margin:5px;
+ z-index:2;
+ alignment-adjust;
+ box-shadow: 1px 1px 3px #999;
+ }
+ .texto
+ {
+ float:right;
+ border-right::100px;
+ background-color:#ffffff;
+ height:490px;
+ width:60.5%;
+ margin:5px;
+ z-index:1;
+ border:thin grey;
+ box-shadow: 1px 1px 3px #999;
+ }
+ 
+ .datos
+ {
+ background-color:#ffffff;
+ height:190px;
+ width:95.5%;
+ margin-top:2px;
+ z-index:1;
+ margin-left:5px;
+ border:thin grey;
+ padding:10px;
+ padding-top:35px;
+ font-family:Microsoft Sans Serif;
+ }
+ 
+ 
+  .descripcion
+ {
+ background-color:#ffffff;
+ height:185px;
+ width:96.7%;
+ margin-top:5px;
+ z-index:1;
+ padding:5px;
+ margin-left:5px;
+ border:thin grey;
+  font-family:Microsoft Sans Serif;
+ }
+ 
+ .botones
+ {
+ background-color:#ffffff;
+ height:30px;
+ width:97.3%;
+ text-align:right;
+ padding-right:5px;
+ z-index:1;
+ margin-left:5px;
+ border:thin grey;
+
+ 
+ font-family:Microsoft Sans Serif;
+ float:left;
+ }
